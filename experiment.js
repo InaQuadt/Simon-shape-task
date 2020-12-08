@@ -1,9 +1,3 @@
-/* Change 1: Adding the image hosting site */
-// define the site that hosts stimuli images
-// usually https://<your-github-username>.github.io/<your-experiment-name>/
-var repo_site = "https://inaquadt.github.io/Simon-shape-task/";
-
-
 /* ************************************ */
 /* Define helper functions */
 /* ************************************ */
