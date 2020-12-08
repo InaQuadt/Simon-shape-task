@@ -1,4 +1,3 @@
-  
 /* Change 1: Adding the image hosting site */
 // define the site that hosts stimuli images
 // usually https://<your-github-username>.github.io/<your-experiment-name>/
