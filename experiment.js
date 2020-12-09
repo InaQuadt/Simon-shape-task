@@ -106,7 +106,7 @@ var choices = [70, 74]
 var current_trial = 0
 var gap = Math.floor(Math.random() * 2000) + 1000
 var test_stimuli = [{
-  stimulus: '<div class = centerbox><img src='+repo_site+'img/orange.png" class="simon_left" /></div>',
+  stimulus: '<div class = centerbox><img src='+repo_site+'"img/orange.png" class="simon_left" /></div>',
   data: {
     correct_response: correct_responses[0][1],
     stim_side: 'left',
@@ -115,7 +115,7 @@ var test_stimuli = [{
   },
   key_answer: correct_responses[0][1]
 }, {
-  stimulus: '<div class = centerbox><img src='+repo_site+'img/orange.png" class="simon_right" /></div>',
+  stimulus: '<div class = centerbox><img src='+repo_site+'"img/orange.png" class="simon_right" /></div>',
   data: {
     correct_response: correct_responses[0][1],
     stim_side: 'right',
@@ -124,7 +124,7 @@ var test_stimuli = [{
   },
   key_answer: correct_responses[0][1]
 }, {
-  stimulus: '<div class = simon_leftbox><img src='+repo_site+'img/blue.png" class="simon_left" /></div>',
+  stimulus: '<div class = simon_leftbox><img src='+repo_site+'"img/blue.png" class="simon_left" /></div>',
   data: {
     correct_response: correct_responses[1][1],
     stim_side: 'left',
@@ -133,7 +133,7 @@ var test_stimuli = [{
   },
   key_answer: correct_responses[1][1]
 }, {
-  stimulus: '<div class = simon_rightbox><img src='+repo_site+'img/blue.png" class="simon_right" /></div>',
+  stimulus: '<div class = simon_rightbox><img src='+repo_site+'"img/blue.png" class="simon_right" /></div>',
   data: {
     correct_response: correct_responses[1][1],
     stim_side: 'right',
