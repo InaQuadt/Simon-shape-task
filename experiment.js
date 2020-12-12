@@ -145,7 +145,7 @@ var test_stimuli = [{
 }];
 
 var practice_trials = jsPsych.randomization.repeat(test_stimuli, 5);
-var test_trials = jsPsych.randomization.repeat(test_stimuli, 2);
+var test_trials = jsPsych.randomization.repeat(test_stimuli, 1);
 
 
 /* ************************************ */
