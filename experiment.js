@@ -298,7 +298,6 @@ var test_block = {
 };
 
 var debrief_block = {
-    type: "html-keyboard-response",
     stimulus: function () {
 
         var trials = jsPsych.data.get().filter({
@@ -309,10 +308,6 @@ var debrief_block = {
         });
         var accuracy = Math.round(correct_trials.count() / trials.count() * 100);
         var rt = Math.round(correct_trials.select('rt').mean());
-
-        return "<p>You responded correctly on " + accuracy + "% of the trials.</p>" +
-            "<p>Your average response time was " + rt + "ms.</p>" +
-            "<p>Press any key to complete the experiment. Thank you!</p>";
 
     }
 };
