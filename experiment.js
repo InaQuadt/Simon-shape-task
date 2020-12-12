@@ -19,6 +19,7 @@ function evalAttentionChecks() {
 }
 
 function assessPerformance() {
+	alert("assess performance")
 	var experiment_data = jsPsych.data.getTrialsOfType('poldrack-single-stim')
 	experiment_data = experiment_data.concat(jsPsych.data.getTrialsOfType('poldrack-categorize'))
 	var missed_count = 0
@@ -299,10 +300,10 @@ var test_block = {
 /* create experiment definition array */
 var simon_experiment = [];
 simon_experiment.push(instruction_node);
-simon_experiment.push(practice_block);
+//simon_experiment.push(practice_block);
 simon_experiment.push(attention_node)
 simon_experiment.push(start_test_block);
 simon_experiment.push(test_block);
 simon_experiment.push(attention_node)
-simon_experiment.push(post_task_block)
+//simon_experiment.push(post_task_block)
 simon_experiment.push(end_block)
