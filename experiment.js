@@ -297,6 +297,26 @@ var test_block = {
   }
 };
 
+var debrief_block = {
+    type: "html-keyboard-response",
+    stimulus: function () {
+
+        var trials = jsPsych.data.get().filter({
+            test_part: 'test'
+        });
+        var correct_trials = trials.filter({
+            correct: true
+        });
+        var accuracy = Math.round(correct_trials.count() / trials.count() * 100);
+        var rt = Math.round(correct_trials.select('rt').mean());
+
+        return "<p>You responded correctly on " + accuracy + "% of the trials.</p>" +
+            "<p>Your average response time was " + rt + "ms.</p>" +
+            "<p>Press any key to complete the experiment. Thank you!</p>";
+
+    }
+};
+
 /* create experiment definition array */
 var simon_experiment = [];
 simon_experiment.push(instruction_node);
@@ -305,5 +325,6 @@ simon_experiment.push(attention_node)
 simon_experiment.push(start_test_block);
 simon_experiment.push(test_block);
 simon_experiment.push(attention_node)
+simon_experiment.push(debrief_block)
 //simon_experiment.push(post_task_block)
 simon_experiment.push(end_block)
